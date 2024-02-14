@@ -1,11 +1,8 @@
-import React,{useState,useEffect} from 'react'
-import BackButton from '../components/BackButton';
-import Spinner from '../components/spinner';
+import React,{useState} from 'react'
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 const CreateBooks = () => {
   const navigate = useNavigate();
-  const [book,setBook] = useState({});
   const [title,setTitle] = useState('');
   const [author,setAuthor] = useState('');
   const [publishYear,setPublishYear] = useState();
