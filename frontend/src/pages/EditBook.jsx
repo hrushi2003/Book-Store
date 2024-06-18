@@ -2,6 +2,7 @@ import React,{useState,useEffect} from 'react'
 import { useNavigate } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import BackButton from '../components/Spinner';
+import Spinner from '../components/Spinner';
 import axios from 'axios';
 const EditBook = () => {
   const {id} = useParams();
