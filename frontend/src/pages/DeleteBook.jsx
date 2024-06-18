@@ -7,7 +7,7 @@ const DeleteBook = () => {
   const navigate = useNavigate();
   const {id} = useParams();
  const deleteBook = () => {
-    axios.delete(`http://localhost:3000/books/${id}`).then(() => {
+    axios.delete(`https://book-store-api-rho.vercel.app/books/${id}`).then(() => {
       alert('book deleted from the database');
       navigate('/');
     }).catch((error) => {
