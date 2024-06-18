@@ -18,7 +18,7 @@ const CreateBooks = () => {
       author,
       publishYear
     }
-    axios.post('http://localhost:3000/books',data).then((response) =>{
+    axios.post('https://book-store-api-rho.vercel.app/books',data).then((response) =>{
       console.log(response.data);
         alert("Data Saved Successfully");
         setLoading(false);
