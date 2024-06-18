@@ -12,7 +12,7 @@ const EditBook = () => {
   const [loading,setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
-    axios.get(`http://localhost:3000/books/${id}`).then((response) => {
+    axios.get(`https://book-store-api-rho.vercel.app/books/${id}`).then((response) => {
       setTitle(response.data.title);
       setAuthor(response.data.author);
       setPublishYear(response.data.publishYear);
