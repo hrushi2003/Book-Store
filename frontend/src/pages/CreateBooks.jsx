@@ -8,7 +8,7 @@ const CreateBooks = () => {
   const [publishYear,setPublishYear] = useState();
   const [loading,setLoading] = useState(false);
   const handleSave = () => {
-    if (publishYear != Number){
+    if (publishYear == ""){
       alert("please enter valid format");
     }
     else{
