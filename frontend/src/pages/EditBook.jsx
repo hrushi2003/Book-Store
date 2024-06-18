@@ -33,7 +33,7 @@ const EditBook = () => {
       author,
       publishYear
     }
-    axios.put(`http://localhost:3000/books/${id}`,data).then((response) =>{
+    axios.put(`https://book-store-api-rho.vercel.app/books/${id}`,data).then((response) =>{
       console.log(response.data);
         alert("Data Saved Successfully");
         setLoading(false);
